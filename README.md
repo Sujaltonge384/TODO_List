@@ -1,6 +1,6 @@
 # 📝 To-Do List Application
 
-A simple and user-friendly To-Do List application built using React and Vite.
+A simple and user-friendly To-Do List application built using React and Vite
 
 The application allows users to add, complete, edit, and delete tasks.
 
