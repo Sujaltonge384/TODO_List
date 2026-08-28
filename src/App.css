@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.app h1 {
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  background: #242424;
+  color: white;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-task input:focus {
+  border-color: #646cff;
+}
+
+.add-task button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  opacity: 0.9;
+}
+
+.todo-list {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.todo-list h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-content input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.task-content span {
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.task-buttons button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #333;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .add-task {
+    flex-direction: column;
+  }
+
+  .todo-item {
+    align-items: flex-start;
+  }
+
+  .task-buttons {
+    flex-direction: column;
+  }
+}
